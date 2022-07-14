@@ -1,0 +1,99 @@
+.cardInterno {
+    background-color: #283142;
+    border-radius: 10px;
+    padding: 30px 10px;
+}
+
+.cardInterno-titulo {
+    color: #676fff;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.container-form {
+    margin-bottom: 16px;
+    max-width: 300px;
+}
+
+.form-controle {
+    font-size: 18px;
+    width: 100%;
+    height: 46px;
+    background-color: #1b2531;
+    padding: 0 20px;
+    color: #9aaabe;
+    border: 1px solid #384459;
+    border-radius: 5px;
+}
+
+.tabelaVendas {
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+.tabelaVendas thead {
+    height: 55px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #e9e9e9;
+}
+
+.tabelaVendas tbody {
+    font-size: 14px;
+    font-weight: 400;
+    color: #cfcfcf;
+    text-align: center;
+}
+
+.tabelaVendas tbody tr:hover > th {
+    background-color: #384459;
+}
+
+.tabelaVendas tbody tr:nth-child(odd) {
+    background-color: #242c3b;
+}
+
+.tabelaVendas tbody td {
+    height: 74px;
+    /* background-color: #283142; */
+    border-top: 1px solid #5f6e82;
+}
+
+.container-botao-vermelho {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.show576 {
+    display: none;
+}
+
+.show992 {
+    display: none;
+}
+
+@media (min-width: 676px) {
+    .show576 {
+        display: table-cell;
+    }
+
+    .cardInterno {
+        padding: 35px;
+    }
+
+    .tabelaVendas tbody td {
+        height: 55px;
+    }
+
+    .tabelaVendas tbody {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 992px) {
+    .show992 {
+        display: table-cell;
+    }
+}
